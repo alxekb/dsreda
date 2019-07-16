@@ -30,4 +30,8 @@ class Api::UsersController < ApplicationController
   def warning
     error
   end
+
+  def user_params
+    params.permit(:id, :email, :points)
+  end
 end

@@ -1,24 +1,12 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+$ rails db:seed
 
-Things you may want to cover:
+/api/users - list all users
 
-* Ruby version
+/api/user?id=1 - list user's balance
 
-* System dependencies
+/api/records?id=1 - list all user records
 
-* Configuration
+POST
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+/add_points?id=1&point=2 - add points to user's balance
